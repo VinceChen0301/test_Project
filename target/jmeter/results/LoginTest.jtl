@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="93" it="0" lt="93" ct="62" ts="1573636809326" s="true" lb="Login" rc="200" rm="OK" tn="线程组 2-1" dt="text" by="1112" sby="218" ng="1" na="2"/>
+<httpSample t="93" it="0" lt="93" ct="62" ts="1573636809326" s="true" lb="Login" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1112" sby="218" ng="1" na="2">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>
