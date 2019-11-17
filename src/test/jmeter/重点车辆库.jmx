@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jmeterTestPlan version="1.2" properties="5.0" jmeter="5.0 r1840935">
   <hashTree>
-    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="智能战法" enabled="true">
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="重点车辆库" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
       <boolProp name="TestPlan.functional_mode">false</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
@@ -77,7 +77,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="智能战法" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="重点车辆库" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
@@ -180,13 +180,13 @@
           <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
         </BeanShellSampler>
         <hashTree/>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="落脚点分析" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保有量专题库分页" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京A10197&quot;,&quot;plateColor&quot;:&quot;5&quot;,&quot;passTimeStart&quot;:&quot;2009-11-16 01:02:32&quot;,&quot;passTimeEnd&quot;:&quot;2029-11-18 01:02:32&quot;,&quot;time&quot;:30,&quot;page&quot;:1,&quot;rows&quot;:500}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京F1024Q&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:15:47&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:15:47&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:2,&quot;rows&quot;:12}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -195,7 +195,7 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/alg/footHold/findList</stringProp>
+          <stringProp name="HTTPSampler.path">/search/vehicleIncluded/findPage</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -254,13 +254,13 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="区域碰撞" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="保有量专题库总量" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;deviceId&quot;:[[&quot;11011205001320030863&quot;,&quot;11011205001320030630&quot;,&quot;11011205001320030819&quot;,&quot;11011205001320030823&quot;,&quot;11011205001320030825&quot;,&quot;11011224001320084013&quot;,&quot;11011224001320083698&quot;,&quot;11011224001320083803&quot;,&quot;11011224001320083805&quot;,&quot;11011224001320083807&quot;,&quot;11011224001320083810&quot;,&quot;11011224001320083812&quot;,&quot;11011224001320083814&quot;,&quot;11011205001320003395&quot;],[&quot;11011205001320030969&quot;,&quot;11011205001320030513&quot;,&quot;11011205001320030625&quot;,&quot;11011205001320030491&quot;,&quot;11011205001320003370&quot;]],&quot;passTimeStart&quot;:&quot;2019-11-16 01:06:28&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:06:28&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京F1024Q&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:15:47&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:15:47&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:2,&quot;rows&quot;:12}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -269,7 +269,7 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/alg/areaCollide/findList</stringProp>
+          <stringProp name="HTTPSampler.path">/search/vehicleIncluded/findCount</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -328,13 +328,13 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="区域徘徊" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="初次入城专题库分页" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;deviceId&quot;:[&quot;11011202001320015560&quot;,&quot;11011206001320035801&quot;,&quot;11011206001320035804&quot;,&quot;11011206001320035820&quot;,&quot;11011206001320035823&quot;,&quot;11011206001320035832&quot;,&quot;11011206001320035843&quot;,&quot;11011206001320035849&quot;,&quot;11011206001320036110&quot;,&quot;11011224001320083077&quot;,&quot;11011224001320083086&quot;,&quot;11011224001320083088&quot;,&quot;11011224001320083090&quot;,&quot;11011224001320083098&quot;,&quot;11011224001320083263&quot;,&quot;11011224001320083855&quot;,&quot;11011224001320083324&quot;,&quot;11011224001320083431&quot;,&quot;11011224001320083534&quot;,&quot;11011224001320083542&quot;,&quot;11011224001320083550&quot;,&quot;11011224001320083553&quot;,&quot;11011224001320083556&quot;,&quot;11011224001320083561&quot;,&quot;11011224001320083564&quot;,&quot;11011224001320084005&quot;,&quot;11011224001320083573&quot;,&quot;11011224001320083773&quot;,&quot;11011224001320083756&quot;,&quot;11011224001320083770&quot;,&quot;11011224001320083788&quot;,&quot;11011205001320003348&quot;,&quot;11011205001320003352&quot;,&quot;11011205001320003355&quot;,&quot;11011205001320003363&quot;,&quot;11011205001320003365&quot;,&quot;11011205001320003371&quot;,&quot;11011205001320003378&quot;,&quot;11011205001320003384&quot;],&quot;appearTimes&quot;:1,&quot;passTimeStart&quot;:&quot;2010-11-16 01:09:38&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:09:38&quot;}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京G1527C&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;plateColor&quot;:[],&quot;passTimeStart&quot;:&quot;2009-08-18 01:19:24&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:19:24&quot;,&quot;plateClass&quot;:&quot;&quot;,&quot;vehicleClass&quot;:&quot;&quot;,&quot;page&quot;:1,&quot;rows&quot;:24}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -343,7 +343,7 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/alg/areaHover/findList</stringProp>
+          <stringProp name="HTTPSampler.path">/alg/firstin/findPage</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -402,13 +402,13 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="轨迹分析" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="初次入城专题库总量" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;passTimeEnd&quot;:&quot;2019-11-18 01:11:51&quot;,&quot;passTimeStart&quot;:&quot;2019-11-18 00:11:51&quot;,&quot;rows&quot;:1,&quot;page&quot;:1}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京G1527C&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;plateColor&quot;:[],&quot;passTimeStart&quot;:&quot;2009-08-18 01:19:24&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:19:24&quot;,&quot;plateClass&quot;:&quot;&quot;,&quot;vehicleClass&quot;:&quot;&quot;,&quot;page&quot;:1,&quot;rows&quot;:24}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -417,7 +417,7 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/search/passcar/findPage</stringProp>
+          <stringProp name="HTTPSampler.path">/alg/firstin/findCount</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -476,13 +476,13 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="伴随分析" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="重点车辆专题库分页" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京A10197&quot;,&quot;plateColor&quot;:&quot;5&quot;,&quot;passTimeStart&quot;:&quot;2010-11-16 01:12:34&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:12:34&quot;,&quot;followTimes&quot;:1,&quot;startSecond&quot;:-30,&quot;endSecond&quot;:30}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京A2KG72&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:21:47&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:21:47&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:2,&quot;rows&quot;:12,&quot;type&quot;:3}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -491,7 +491,85 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/alg/follow/findList</stringProp>
+          <stringProp name="HTTPSampler.path">/search/keyCar/findPage</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="TestPlan.comments">type=1 涉毒车辆
+type=3 涉案车辆
+type=2 涉恐车辆
+type=4 涉疆车辆</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="923369121">&quot;success&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="重点车辆专题库总量" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京A2KG72&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:21:47&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:21:47&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:2,&quot;rows&quot;:12,&quot;type&quot;:3}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${base_Url}</stringProp>
+          <stringProp name="HTTPSampler.port">2000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/search/keyCar/findCount</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -550,13 +628,13 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="车辆频次" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="渣土车分页" enabled="true">
           <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;京A10197&quot;,&quot;passTimeStart&quot;:&quot;2010-11-16 01:14:06&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:14:06&quot;,&quot;plateColor&quot;:&quot;5&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[]}</stringProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;沪D90062&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:26:54&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:26:54&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:1,&quot;rows&quot;:12}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -565,7 +643,229 @@
           <stringProp name="HTTPSampler.port">2000</stringProp>
           <stringProp name="HTTPSampler.protocol">http</stringProp>
           <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
-          <stringProp name="HTTPSampler.path">/alg/VehicleFrequency/findList</stringProp>
+          <stringProp name="HTTPSampler.path">/search/muckCar/findPage</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="923369121">&quot;success&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="渣土车总量" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;沪D90062&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:26:54&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:26:54&quot;,&quot;plateColor&quot;:[],&quot;page&quot;:1,&quot;rows&quot;:12}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${base_Url}</stringProp>
+          <stringProp name="HTTPSampler.port">2000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/search/muckCar/findCount</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="923369121">&quot;success&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="危险品车分页" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;沪N8816Q&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:31:31&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:31:31&quot;,&quot;plateColor&quot;:[],&quot;state&quot;:[0,2],&quot;page&quot;:1,&quot;rows&quot;:12}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${base_Url}</stringProp>
+          <stringProp name="HTTPSampler.port">2000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/search/dangerCar/findPage</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="响应断言" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="923369121">&quot;success&quot;</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.custom_message"></stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="察看结果树" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <sentBytes>true</sentBytes>
+                <url>true</url>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
+                <connectTime>true</connectTime>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="危险品车总量" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">{&quot;plateNo&quot;:&quot;沪N8816Q&quot;,&quot;deviceOrg&quot;:[],&quot;deviceId&quot;:[],&quot;passTimeStart&quot;:&quot;2009-11-17 22:31:31&quot;,&quot;passTimeEnd&quot;:&quot;2019-11-18 01:31:31&quot;,&quot;plateColor&quot;:[],&quot;state&quot;:[0,2],&quot;page&quot;:1,&quot;rows&quot;:12}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${base_Url}</stringProp>
+          <stringProp name="HTTPSampler.port">2000</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
+          <stringProp name="HTTPSampler.path">/search/dangerCar/findCount</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
